@@ -1,0 +1,149 @@
+
+:root{
+    --main-color: transparent;
+    --acc-color: rgb(0, 0, 0);
+    --border-width: 0px;
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+
+}
+
+header{
+    /* background-color:var(--main-color); */
+    background-color: transparent;
+    border: var(--border-width) solid var(--acc-color);
+    opacity: 1;
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+
+    color: var(--acc-color);
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+    size: 50%;
+    font-size: 400%;
+    font-family: var(--font-family);
+}
+
+songProgress {
+    background-color: var(--main-color);
+    position: fixed;
+
+    top:var(--border-width);
+    left: 5%;
+    height: 10%;
+    width: 200px;
+
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: larger;
+
+
+}
+
+songProgress p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+songProgress canvas{
+    background-color: var(--main-color);
+    border: 1px solid var(--acc-color);
+
+    bottom: 0px;
+    
+
+    
+}
+
+footer {
+    background-color:var(--main-color);
+    border: var(--border-width) solid var(--acc-color);
+    
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+
+    color: var(--acc-color);
+
+    
+}
+
+leftPanel {
+    background-color:var(--main-color);
+    border: var(--border-width) solid var(--acc-color);
+    
+    position:fixed;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    height: 50%;
+    width: 10%;
+}
+
+rightPanel {
+    background-color:var(--main-color);
+    border: var(--border-width) solid var(--acc-color);
+    
+    position:fixed;
+    bottom: 11%;
+    right: 0;
+    height: 50%;
+    width: 10%;
+
+    
+}
+rightPanel button{
+    background-color: var(--main-color); 
+    color: var(--acc-color);
+
+    border: 1px solid var(--acc-color);
+
+    position: static;
+    width: 100%;
+    height: 20%;
+    font-family: var(--font-family);
+    font-size: larger;
+
+    
+}
+
+
+
+  
+album {
+
+    border: var(--border-width) solid var(--acc-color);
+
+    position: fixed;
+
+    width: 150px;
+    height: 150px;
+
+    top:11%;
+    right: var(--border-width);
+
+}
+
+mapContainer {
+    background-color: var(--main-color);
+    border: var(--border-width) solid var(--acc-color);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    top:0;
+}
+
+

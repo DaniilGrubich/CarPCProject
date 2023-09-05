@@ -1,0 +1,105 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bernii/gauge.js/dist/gauge.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='newStyle.css') }}">
+  <link rel="stylesheet" type="text/css" href="newStyle.css">
+
+</head>
+
+<header>
+
+    <climate>
+      <canvas id="mainTempGaugeIn"></canvas>
+      <p id="mainTempGaugeInLabel">20</p>
+    
+      <canvas id="mainTempGaugeOut"></canvas>
+      <p id="mainTempGaugeOutLabel">20</p>
+      
+    </climate>
+
+    <h1 id="lblTime">12:24PM</h1>
+
+
+
+    <frontCamera>
+    </frontCamera>
+
+</header>
+
+<body>
+
+
+ </bodySide>
+ <bodySide class="right" >
+   <div class="grid-container">
+      <a href="GaugePage1.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas1" ></canvas> <p id = gridLabel1> xxxxxx </p> <p id = gridValue1> xxxxxx </p> </div> </a>
+      <a href="GaugePage2.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas2" ></canvas> <p id = gridLabel2> xxxxxx </p> <p id = gridValue2> xxxxxx </p> </div> </a>
+      <a href="GaugePage3.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas3" ></canvas> <p id = gridLabel3> xxxxxx </p> <p id = gridValue3> xxxxxx </p> </div> </a>
+      <a href="GaugePage4.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas4" ></canvas> <p id = gridLabel4> xxxxxx </p> <p id = gridValue4> xxxxxx </p> </div> </a>
+      <a href="GaugePage5.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas5" ></canvas> <p id = gridLabel5> xxxxxx </p> <p id = gridValue5> xxxxxx </p> </div> </a>
+
+      <a href="GaugePage6.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas6" ></canvas> <p id = gridLabel6> xxxxxx </p> <p id = gridValue6> xxxxxx </p> </div> </a>
+      <a href="GaugePage7.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas7" ></canvas> <p id = gridLabel7> xxxxxx </p> <p id = gridValue7> xxxxxx </p> </div> </a>
+      <a href="GaugePage8.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas8" ></canvas> <p id = gridLabel8> xxxxxx </p> <p id = gridValue8> xxxxxx </p> </div> </a>
+      <a href="GaugePage9.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas9" ></canvas> <p id = gridLabel9> xxxxxx </p> <p id = gridValue9> xxxxxx </p> </div> </a>
+      <a href="GaugePage10.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas10" ></canvas> <p id = gridLabel10> xxxxxx </p> <p id = gridValue10> xxxxxx </p> </div> </a>
+
+      <a href="GaugePage11.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas11" ></canvas> <p id = gridLabel11> xxxxxx </p> <p id = gridValue11> xxxxxx </p> </div> </a>
+      <a href="GaugePage12.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas12" ></canvas> <p id = gridLabel12> xxxxxx </p> <p id = gridValue12> xxxxxx </p> </div> </a>
+      <a href="GaugePage13.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas13" ></canvas> <p id = gridLabel13> xxxxxx </p> <p id = gridValue13> xxxxxx </p> </div> </a>
+      <a href="GaugePage14.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas14" ></canvas> <p id = gridLabel14> xxxxxx </p> <p id = gridValue14> xxxxxx </p> </div> </a>
+      <a href="GaugePage15.html" style="text-decoration:none"><div class="grid-item">  <canvas  id = "gridCanvas15" ></canvas> <p id = gridLabel15> xxxxxx </p> <p id = gridValue15> xxxxxx </p> </div> </a>
+   
+      
+   </div>
+ </bodySide>
+
+</body>
+
+<footer>
+ <leftCamera>
+    
+ </leftCamera>
+
+ <!-- <album>
+    <img id="albumPic" width="100%" height="100%" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+ </album> -->
+
+ <!-- <songProgress>
+    
+    <p id="songArtist">Artist</p>
+    <p id="songName">Name</p>
+    
+    <div id="songProgress-border" height= "20px" width="200px" >      
+      <div id="songProgress"></div >    
+    </div >    
+ </songProgress> -->
+
+
+ 
+
+ <rightCamera>
+
+ </rightCamera>
+
+</footer>
+
+<script src="{{ url_for('static', filename='mapScript.js') }}"></script> 
+<script src="mapScript.js"></script>
+
+<script src="{{ url_for('static', filename='gaugesSctript.js') }}"></script> 
+<script src="gaugesSctript.js"></script>
+
+<script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='mySocket.js') }}"></script> 
+<script src="mySocket.js"></script>
+
+<script src="{{ url_for('static', filename='callbacks.js') }}"></script> 
+<script src="callbacks.js"></script> 
+</html>

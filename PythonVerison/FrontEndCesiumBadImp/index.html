@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.84/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  
+  <mapContainer id="cesiumContainer">
+  </mapContainer>
+
+  <!-- <header>
+    <songProgress>
+      <p id="songName">Name</p>
+      <p id="songArtist">Artist</p>
+      <canvas id="songProgress" height= "20px" width="200px" >Progress</canvas>    
+    </songProgress>
+    <h1 id="lblTime">XX:XXPM</h1>
+
+
+  </header> -->
+  
+  <footer>
+      <p>footera text</p>
+  </footer>
+
+  <leftPanel>
+
+  </leftPanel>
+
+  <rightPanel>
+    <button onclick="changeStyleButtonCallback()"> Change <br> Style</button>
+    <button onclick="carMonitorButtonCallback()"> Car <br> Monitor</button>
+    <button onclick="settingsButtonCallback()"> Settings</button>
+    <button> Whatever</button>
+    <button onclick="previewCamerasButtonCallback()"> Preview Cameras</button>
+ 
+  </rightPanel>
+
+  
+
+  <album>
+    <img id="albumPic" width="100%" height="100%" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  </album>
+
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.84/Build/Cesium/Cesium.js"></script>
+  <script src="{{ url_for('static', filename='mapScript.js') }}"></script> 
+  <script src="mapScript.js"></script>
+
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='mySocket.js') }}"></script> 
+  <script src="mySocket.js"></script> 
+
+  <script src="{{ url_for('static', filename='callbacks.js') }}"></script> 
+  <script src="callbacks.js"></script> 
+
+ 
+
+</body>
+</html>
+
+
